@@ -287,13 +287,6 @@ The AXI ID can be used to determine the source of the transaction:
 - 0x02 : XDMA Channel 2
 - 0x03 : XDMA Channel 3
 
-The AXI ID can be used to determine the source of the transaction:
-- 0x20 : PCI Interface
-- 0x00 : XDMA Channel 0
-- 0x01 : XDMA Channel 1
-- 0x02 : XDMA Channel 2
-- 0x03 : XDMA Channel 3
-
 ### AXI-4 for Outbound PCIe Transactions (CL is Master, Shell is Slave, 512-bit)  -- PCIM interface
 
 This is a 512-bit wide AXI-4 interface for the CL to master cycles to the PCIe bus. This can be used, for example, to push data from the CL to instance memory, or read from the instance memory.
