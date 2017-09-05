@@ -71,9 +71,9 @@ The following major features are included in this HDK release:
 ### 4.	URAM 
 * Restrictions on URAM have been updated to enable 100% of the URAM with a CL to be utilized.  See documentation on enabling URAM utilization: [URAM_options](./hdk/docs/URAM_Options.md)
 
-### 5.	IPI
-* IPI developer flow is supported.  See [IPI and GUI flow documentation](./hdk/docs/IPI_GUI_Flows.md)
-  
+### 5.	Vivado IP Integrator (IPI) and GUI Workflow
+* Vivado graphical design canvas and project based flow is now supported.  This flow allows developers to create CL logic as either RTL or complex subsystems based on an IP centric block diagram.  Prior experience in RTL or system block designs is recommended.  The [IP Integrator and GUI Vivado workflow](README.md#ipi) enables a unified graphical environment to guide the developer through the common steps to design, implement, and verify FGPAs.  To get started, start with the [README that will take you through getting started steps and documents on IPI](README.md#ipi)
+ 
 ### 6.	Build Flow improvments
 * See [Build_Scripts](./hdk/common/shell_v071417d3/build/scripts)
 
@@ -103,7 +103,7 @@ See example for more details [CL_HELLO_WORLD_VHDL](./hdk/cl/examples/cl_hello_wo
 * First installation of AWS FPGA SDK requires having gcc installed in the instance server. If that's not available, try `sudo yum update && sudo yum group install "Development Tools"`
 * The HDK build step requires having Xilinx's Vivado tool and Vivado License Management running.  Tools and licenses are provided with AWS FPGA Developer AMI at no additional cost
 * This release is tested and validated with Xilinx 2017.1 SDX (Vivado)
-* Developers that choose to not use the developer AMI in AWS EC2, need to have Xilinx license 'EF-VIVADO-SDX-VU9P-OP' installed on premise.  For more help, please refer to [On-premise licensing help](./hdk/docs/on_premise_licensing_help.md)
+* Developers that choose to not use the developer AMI in AWS EC2, need to have Xilinx license 'EF-VIVADO-SDX-VU9P-OP' installed on premises.  For more help, please refer to [On-premise licensing help](./hdk/docs/on_premise_licensing_help.md)
 * Vivado XSIM RTL simulator supported by the HDK
 * MentorGraphic's Questa RTL simulator supported by the HDK (but requires a purchase of separate license from MentorGraphics)
 * Synopsys' VCS RTL simulator supported by the HDK (but requires a purchase of separate license from Synopsys)

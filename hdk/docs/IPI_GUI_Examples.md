@@ -1,16 +1,16 @@
-# Vivado HLx AWS Tutorials and Examples
+# GUI Workflow with Vivado IP Integrator Quickstart Examples
 
 ## Table of Content
 
 1. [Overview](#overview)
 
-2. [Automated IP Integrator Examples](#ipiex)
+2. [IP Integrator Examples](#ipiex)
 
-3. [Automated RTL Examples](#rtlex)
+3. [CL Examples using IP Integrator](#rtlex)
 
-4. [IP Integrator Example Tutorial with AXI GPIO/AXI BRAM](#ipitut)
+4. [IP Integrator Example with AXI GPIO/AXI BRAM](#ipitut)
 
-5. [IP Integrator Design Modular Reference Tutorial-hello_world](#ipimodtut)
+5. [IP Integrator Design Modular Reference Tutorial with hello world RTL](#ipimodtut)
 
 6. [Adding Existing RTL Tutorial-cl_hello_world](#rtlexistut_world)
 
@@ -23,19 +23,18 @@
 <a name="overview"></a>
 # Overview  
 
-This document covers examples provided through the HLx environment and step by step tutorials with certain flows.
+This document is an overview of the IP Integrator examples provided through the HLx environment.
 
-Make sure the [HLx Setup Instructions](./IPI_GUI_Vivado_Setup.md) are followed and executed.
+Prior to starting you should have completed [Vivado Setup Instructions](./IPI_GUI_Vivado_Setup.md) to help you setup and get familar with Vivado GUI and IP Integrator.
 
+All of the examples have been integrated into an automated flow that genereates the Vivado project for you.
 
 <a name="ipiex"></a>
-# Automated IP Integrator Examples
+# IP Integrator Examples
 
-## Overview
+This section lists a few simple IP Integrator example designs that can help you get familar with the automated project generation flow and IP integrator.
 
-This section covers using a automated IP Integrator example designs with Vivado.
-
-Current examples include the following. Select the link below for information on the design and how to create the particular example design.
+Current examples include the following:
 
 [hello_world](../cl/examples/hello\_world\_hlx/README.md)
 
@@ -43,27 +42,27 @@ Current examples include the following. Select the link below for information on
 
 [cl_hello_world_ref](../cl/examples/cl\_hello\_world\_ref\_hlx/README.md)
 
+Select the above link for detailed information on the design and how to get started with using that design.
+
 
 <a name="rtlex"></a>
-# Automated RTL Examples
+# CL Examples using IP Integrator
 
-## Overview
+The following CL examples cover using an automated RTL example design with Vivado.  The examples are based on the HDK cl/examples directory (ex: cl\_hello\_world and cl\_dram\_dma).
 
-This section covers using a automated RTL example design with Vivado.  The examples are from the cl/examples directory for cl\_hello\_world and cl\_dram\_dma.
-
-Current examples include the following. Select the link below for information on the design and how to create the particular example design.
+Current examples include the following:
 
 [cl_hello_world](../cl/examples/cl\_hello\_world\_hlx/README.md)
 
 [cl_dram_dma](../cl/examples/cl\_dram\_dma\_hlx/README.md)
 
+Select the above link for detailed information on the design and how to get started with using that design.
+
 
 <a name="ipitut"></a>
 # IP Integrator Example Tutorial with AXI GPIO and AXI BRAM (hello\_world)
 
-## Overview
-
-This tutorial will configure the AWS IP with the BAR1 Interface (AXI4-Lite Master Interface) and the PCIS Interface (AXI4 Master). 
+The IPI example turtorial will cover how to configure the AWS IP with the BAR1 Interface (AXI4-Lite Master Interface) and the PCIS Interface (AXI4 Master). 
 
 The AXI GPIO IP is added to the design to control the VLED.  Also, the AXI BRAM is added to the design for the PCIS Interface (AXI4 Master).
 
@@ -516,7 +515,7 @@ Use the software in cl/examples/cl\_hello\_world
 
 This example shows how to add existing RTL, simulation RTL, and constraints into a Vivado project.  This example uses cl\_dram\_dma from the github examples directory.
 
-Make sure the HLx Setup Instructions are followed before continuing.
+Make sure the [HLx Setup Instructions](./IPI_GUI_Vivado_Setup.md) are followed before continuing.
 
 ## Create Directory Structure\Vivado Project and System Variables 
 
@@ -686,7 +685,7 @@ Use the software in cl/examples/cl\_dram\_dma
 
 This example shows how to add existing RTL, simulation RTL, and constraints into a Vivado project based upon template files provided from github.
 
-Make sure the HLx Setup Instructions are followed before continuing.
+Make sure the [HLx Setup Instructions](./IPI_GUI_Vivado_Setup.md) are followed before continuing.
 
 ## Create Directory Structure\Vivado Project and System Variables 
 
